@@ -30,17 +30,20 @@ One disclaimer: from July 2018 to December 2019 I was a Senior Erlang Developer 
 *** IPFS & related
 **** IPFS
 
-https://ipfs.io/
+- https://ipfs.io/
+- [[https://twitter.com/IPFSbot][@IPFSbot]]
 
 **** Filecoin
 
-https://filecoin.io
+- https://filecoin.io
+- [[https://twitter.com/MineFilecoin][@MineFilecoin]]
 
 - "Mainnet launch window: March 23 - April 24, 2020" [[https://filecoin.io/blog/roadmap-update-2019-q4/][(Filecoin Roadmap Update Q4 2019]])
 
 **** BTFS (BitTorrent File System)
 
-https://www.bittorrent.com/btfs/
+- https://www.bittorrent.com/btfs/
+- [[https://twitter.com/BitTorrent][@BitTorrent]]
 
 "BTFS is a fork of IPFS ... integrated with the TRON blockchain" (from the [[https://www.bittorrent.com/btfs/faq/][faq]]).
 
@@ -48,7 +51,8 @@ https://www.bittorrent.com/btfs/
 
 **** Decent
 
-https://decent.ch/
+- https://decent.ch/
+- [[https://twitter.com/DECENTplatform][@DECENTplatform]]
 
 - "With native integration of file sharing system IPFS and CDN, DCore enables large file storage and distribution." ([[https://decent.ch/dcore/][DCore]]).
 - [[https://docs.decent.ch/DCoreTechDesc/index.html][DCore IPFS Layer]]
@@ -56,19 +60,23 @@ https://decent.ch/
 *** The rest
 **** 0chain
 
-https://0chain.net/
+- https://0chain.net/
+- [[https://twitter.com/0Chain][@0Chain]]
 
 **** Arweave
 
-https://www.arweave.org/
+- https://www.arweave.org/
+- [[https://twitter.com/arweaveteam][@arweaveteam]]
 
 **** Dat
 
-https://dat.foundation/
+- https://dat.foundation/
+- [[https://twitter.com/datfoundation][@datfoundation]]
 
 **** Internxt
 
-https://internxt.com/
+- https://internxt.com/
+- [[https://twitter.com/Internxt][@Internxt]]
 
 "All users recieve a free 2 GB storage plan to experience X Cloud. If you enjoy the service you can upgrade to our 20 GB plan for €0.89, 200 GB plan for €3.49 or alternativly [sic] upgrade to our largest plan 2 TB for €8.99." [charges monthly] [[https://internxt.com/cloud][(XCloud]])
 
@@ -81,31 +89,43 @@ Little/no detail on how storage is verified, but Internxt seems to be partly a j
 
 **** Maidsafe
 
-https://maidsafe.net
+- https://maidsafe.net
+- [[https://twitter.com/maidsafe][@maidsafe]]
 
 **** Opacity
 
-https://www.opacity.io/
+- https://www.opacity.io/
+- [[https://twitter.com/Opacity_Storage][@Opacity_Storage]]
 
-- Basic $39.99/year [[https://www.opacity.io/sign-up][(Sign up]])
+Basic $39.99/year [[https://www.opacity.io/sign-up][(Sign up]])
 
 **** Peergos
 
-https://peergos.org
+- https://peergos.org
+- [[https://twitter.com/peergos][@peergos]]
 
 **** RIF
 
-https://www.rifos.org/blog/rif-storage-a-decentralized-storage-solution/
+- https://www.rifos.org/blog/rif-storage-a-decentralized-storage-solution/
+- [[https://twitter.com/rif_os][@rif_os]]
+
+**** Sharder
+
+- https://www.sharder.org/
+- [[https://twitter.com/SharderChain][@SharderChain]]
 
 **** Sia
 
-https://sia.tech
+- https://sia.tech
+- [[https://twitter.com/siatechhq][@siatechhq]]
 
 **** Storj
 
-https://storj.io
+- https://storj.io
+- [[https://twitter.com/storjproject][@storjproject]]
 
 **** Swarm
 
-https://swarm-guide.readthedocs.io/en/latest/index.html
+- https://swarm-guide.readthedocs.io/en/latest/index.html
+- [[https://twitter.com/ethswarm][@ethswarm]]
 
