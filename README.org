@@ -1,0 +1,111 @@
+* Decentralised Storage Platforms
+
+** Contents 								:TOC:
+- [[#decentralised-storage-platforms][Decentralised Storage Platforms]]
+  - [[#overview][Overview]]
+  - [[#platforms][Platforms]]
+
+** Overview
+
+This document is intended to list projects implementing decentralised storage systems (I'm calling them "platforms" for want of a better term).
+
+Initially the list will be just that --- a list of names and urls --- but I intend to go through and provide a brief technical summary of each project (with references).  I am not going to say "X is better than Y" but I will pose questions if only to encapsulate and bookmark gaps in my own understanding.  I'll also focus on the tech, with less discussion of the financial side (I mean things like VC backing, market cap, etc.).
+
+I would like the document to be comprehensive, or at least “representative”. If I have missed a relevant project, please let me know through the usual channels (issues, forks, PRs, tweets, emails, etc.).
+
+Thank you.
+
+One disclaimer: from July 2018 to December 2019 I was a Senior Erlang Developer at Arweave, one of the projects below.
+
+** Platforms
+
+- for each:
+  - link to home page
+  - link to white paper or equivalent
+  - brief description
+  - highlight unique/innovative/different contributions
+  - query bits I don't understand
+  - note most recent activity
+
+*** IPFS & related
+**** IPFS
+
+https://ipfs.io/
+
+**** Filecoin
+
+https://filecoin.io
+
+- "Mainnet launch window: March 23 - April 24, 2020" [[https://filecoin.io/blog/roadmap-update-2019-q4/][(Filecoin Roadmap Update Q4 2019]])
+
+**** BTFS (BitTorrent File System)
+
+https://www.bittorrent.com/btfs/
+
+"BTFS is a fork of IPFS ... integrated with the TRON blockchain" (from the [[https://www.bittorrent.com/btfs/faq/][faq]]).
+
+- Why is BTFS a fork of IPFS?  What does IPFS provide that BitTorrent doesn't already have?
+
+**** Decent
+
+https://decent.ch/
+
+- "With native integration of file sharing system IPFS and CDN, DCore enables large file storage and distribution." ([[https://decent.ch/dcore/][DCore]]).
+- [[https://docs.decent.ch/DCoreTechDesc/index.html][DCore IPFS Layer]]
+
+*** The rest
+**** 0chain
+
+https://0chain.net/
+
+**** Arweave
+
+https://www.arweave.org/
+
+**** Dat
+
+https://dat.foundation/
+
+**** Internxt
+
+https://internxt.com/
+
+"All users recieve a free 2 GB storage plan to experience X Cloud. If you enjoy the service you can upgrade to our 20 GB plan for €0.89, 200 GB plan for €3.49 or alternativly [sic] upgrade to our largest plan 2 TB for €8.99." [charges monthly] [[https://internxt.com/cloud][(XCloud]])
+
+"X Core is a simple, distributed, peer-to-peer downloadable application that enables anyone to act as a computing server called 'hosts' who rent out their computers extra hard-drive space which securely stores and shares encrypted shards of X Cloud user data for a return of our cryptocurrency token INXT." [[https://internxt.com/core][(XCore]])
+
+Little/no detail on how storage is verified, but Internxt seems to be partly a javascript UI based on a Storj backend:
+
+- "We forked Storj" 2019/06/11: https://bitcointalk.org/index.php?topic=5153073.0
+- See also their github page: https://github.com/internxt
+
+**** Maidsafe
+
+https://maidsafe.net
+
+**** Opacity
+
+https://www.opacity.io/
+
+- Basic $39.99/year [[https://www.opacity.io/sign-up][(Sign up]])
+
+**** Peergos
+
+https://peergos.org
+
+**** RIF
+
+https://www.rifos.org/blog/rif-storage-a-decentralized-storage-solution/
+
+**** Sia
+
+https://sia.tech
+
+**** Storj
+
+https://storj.io
+
+**** Swarm
+
+https://swarm-guide.readthedocs.io/en/latest/index.html
+
