@@ -1,13 +1,13 @@
-* Decentralised Storage Platforms
+* Decentralized Storage Platforms
 
 ** Contents 								:TOC:
-- [[#decentralised-storage-platforms][Decentralised Storage Platforms]]
+- [[#decentralized-storage-platforms][Decentralized Storage Platforms]]
   - [[#overview][Overview]]
   - [[#platforms][Platforms]]
 
 ** Overview
 
-This document is intended to list projects implementing decentralised storage systems (I'm calling them "platforms" for want of a better term).
+This document is intended to list projects implementing decentralized storage systems (I'm calling them "platforms" for want of a better term).
 
 Initially the list will be just that --- a list of names and urls --- but I intend to go through and provide a brief technical summary of each project (with references).  I am not going to say "X is better than Y" but I will pose questions if only to encapsulate and bookmark gaps in my own understanding.  I'll also focus on the tech, with less discussion of the financial side (I mean things like VC backing, market cap, etc.).
 
@@ -33,6 +33,13 @@ One disclaimer: from July 2018 to December 2019 I was a Senior Erlang Developer 
 - https://ipfs.io/
 - [[https://twitter.com/IPFSbot][@IPFSbot]]
 
+***** Hosted IPFS
+
+Several projects offer hosted wrappers around IPFS for improved ease of use and/or reliability.  Some examples as I come across them:
+
+- [[https://pinata.cloud/][IPFS Pinata]]: [[https://twitter.com/IPFSPinata][@IPFSPinata]]
+- [[https://temporal.cloud/][Temporal]]: [[https://twitter.com/Temporalcloud][@Temporalcloud]]
+
 **** Filecoin
 
 - https://filecoin.io
@@ -56,6 +63,18 @@ One disclaimer: from July 2018 to December 2019 I was a Senior Erlang Developer 
 
 - "With native integration of file sharing system IPFS and CDN, DCore enables large file storage and distribution." ([[https://decent.ch/dcore/][DCore]]).
 - [[https://docs.decent.ch/DCoreTechDesc/index.html][DCore IPFS Layer]]
+
+**** Peergos
+
+- https://peergos.org
+- [[https://twitter.com/peergos][@peergos]]
+
+Peergos uses IPFS for storage, i.e., each Peergos server "includes an instance of IPFS" [[[https://book.peergos.org/architecture/physical.html?highlight=ipfs][Architecture]]].
+
+For more details see:
+
+- https://peergos.org/technology
+- https://book.peergos.org/
 
 *** The rest
 **** 0chain
@@ -98,11 +117,6 @@ Little/no detail on how storage is verified, but Internxt seems to be partly a j
 - [[https://twitter.com/Opacity_Storage][@Opacity_Storage]]
 
 Basic $39.99/year [[https://www.opacity.io/sign-up][(Sign up]])
-
-**** Peergos
-
-- https://peergos.org
-- [[https://twitter.com/peergos][@peergos]]
 
 **** RIF
 
