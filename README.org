@@ -143,3 +143,59 @@ Basic $39.99/year [[https://www.opacity.io/sign-up][(Sign up]])
 - https://swarm-guide.readthedocs.io/en/latest/index.html
 - [[https://twitter.com/ethswarm][@ethswarm]]
 
+Swarm describes itself as "a distributed storage platform and content distribution service, a native base layer service of the ethereum web3 stack" [sw-1].
+
+Content uploaded into the network is chunked, each chunk is hashed, and the hash determines which network node(s?) store the chunk [sw-2].  In other words, the basic mechanism is a distributed hash table (DHT), "... but with two important (and under-researched) features" [sw-2].  These two features are (a) that each node actively manages its peer set, and (b) a "SWAP incentive system" that promotes "opportunistic caching behaviour".
+
+Very much on the IPFS/BitTorrent model, Swarm seems to be primarily a distribution network that has storage as a side effect (caching).
+
+Ethereum is used for the underlay transport ("A Swarm network is a network of nodes running a wire protocol called bzz using the ethereum devp2p/rlpx network stack as the underlay transport." [sw-2]) and for domain name resolution (resolving domain names to Swarm hashes).  The blog post [sw-2] also mentions "service payments and content availability insurance".
+
+"Content that falls out of fashion, goes out of date, or never was popular to begin with, will be garbage collected and removed unless protected by insurance." [sw-2]
+
+As with the various incentive schemes on top of IPFS, Swarm adds an incentive scheme on top of its basic mechanism in order to provide storage as more than a side effect of distribution.
+
+The Swarm documentation is very clear that, until storage insurance has been implemented, Swarm should not be used for reliable storage:
+
+- "Storage insurance (yet to be implemented) will offer users a secure guarantee to protect important content from being purged." [sw-3a]
+
+- "Uploaded content is *not guaranteed to persist on the testnet* until storage insurance is implemented. All participating nodes should consider participation a voluntary service with no formal obligation whatsoever and should be expected to delete content at their will. Therefore, users should *under no circumstances regard Swarm as safe storage* until the incentive system is functional." [sw-3b, emphasis in original]
+
+***** Storage insurance
+
+At time of writing (19th Jan 2020), storage insurance still seems not to have been fully implemented.  In fact, it seems that the basic SWAP incentive system mentioned above might not have been implemented either.  The incentive system for Swarm is documented in [sw-4].  This includes SWAP, as well as SWEAR and SWINDLE --- the latter two governing storage insurance and litigation:
+
+- SWEAR: Nodes registered on the swarm network are accountable and stand to lose their deposit if they are found to violate the rules of the swarm in an on-chain litigation process.
+
+- SWINDLE: A scheme to pool resources to enforce adherence to the rules, by regular auditing, policing, and eventually conscientious litigation.
+
+There is a separate github repo for the protocols [[https://github.com/ethersphere/swap-swear-and-swindle/][here]].  The master README notes:
+
+"The master branch only contains the SimpleSwap contract for now. Everything else (full Swap, Swear and Swindle) can be found in the experimental branch." \\
+(HEAD of master on 19th Jan 2020, commit [[https://github.com/ethersphere/swap-swear-and-swindle/blob/4e72b13596495243c34f9da6f2e62e48a21203ff/README.md][4e72b13596495243c34f9da6f2e62e48a21203ff]])
+
+The experimental branch README notes (emphasis in original):
+
+"*Please note that all contracts within this repository are considered highly experimental, contain critical flaws (missing checks, badly chosen timeouts, etc.) and will cause loss of money if used in production. Also Swear / Swindle are pure experimentation at this time and will probably replaced completely.*" \\
+(HEAD of experimental on 19th Jan 2020, commit  [[https://github.com/ethersphere/swap-swear-and-swindle/blob/e1d8098d883ea6695add6f60a777366070a5c0a3/README.md][e1d8098d883ea6695add6f60a777366070a5c0a3]])
+
+The SWEAR protocol governs a contract between an uploader and a single storing node.  The node registers for the contract by sending a deposit to the contract (presumably implemented as an Ethereum smart contract).  The contract (and the deposit) is for a set period, after which the deposit is refunded.  Registration is not compulsory, "it is only necessary if the node wishes to sell promises of
+storage" [sw-4, section 3.3 "Registered nodes and Ensured ARchival (SWEAR)].  These promises can be traded between Swarm nodes (perhaps like futures contracts).
+
+The SWINDLE protocol governs litigation against nodes for breaking a storage promise.  Litigation is between a single challenger and a single defendant.  There are costs associated with opening litigation, which are refunded if the challenge is successful.  If a storage node is found to have broken its promise (e.g., does not produce the insured data chunk) that node loses part of its deposit ("the deposit must be at least partly burned", "the majority (say 95%)").  It is not clear whether uploaders are compensated at all for data loss: "if penalites were paid out as compensation to holders of receipts of lost chunks, it would provide an avenue of early exit for a registered node by “losing” bogus chunks deposited by colluding users."
+
+***** Queries
+
+- On initial upload of data into the network, it's not clear how many nodes receive each chunk.  Is it a single node (e.g., the nearest to the hash), or a set of nodes (e.g., within some radius of the hash) in which case how many?  A storage promise contract (SWEAR) however is with a single storing node.
+
+***** Swarm references
+
+[sw-1] [[https://swarm.ethereum.org/][SWARM: Storage and Communication for a Sovereign Digital Society]]
+
+[sw-2] [[https://blog.ethereum.org/2016/12/15/swarm-alpha-public-pilot-basics-swarm/][Swarm alpha public pilot and the basics of Swarm]]
+
+[sw-3a] https://swarm-guide.readthedocs.io/en/latest/architecture.html#preface
+
+[sw-3b] https://swarm-guide.readthedocs.io/en/latest/index.html#development-status
+
+[sw-4] [[https://swarm.ethereum.org/ethersphere/orange-papers/1][Swap, Swear and Swindle: Incentive System for Swarm]]
