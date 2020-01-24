@@ -1,9 +1,27 @@
 * Decentralized Storage Platforms
 
-** Contents 								:TOC:
+** Contents 								:TOC_4_gh:
 - [[#decentralized-storage-platforms][Decentralized Storage Platforms]]
   - [[#overview][Overview]]
   - [[#platforms][Platforms]]
+    - [[#ipfs--related][IPFS & related]]
+      - [[#ipfs][IPFS]]
+      - [[#filecoin][Filecoin]]
+      - [[#btfs-bittorrent-file-system][BTFS (BitTorrent File System)]]
+      - [[#decent][Decent]]
+      - [[#peergos][Peergos]]
+    - [[#the-rest][The rest]]
+      - [[#0chain][0chain]]
+      - [[#arweave][Arweave]]
+      - [[#dat][Dat]]
+      - [[#internxt][Internxt]]
+      - [[#maidsafe][Maidsafe]]
+      - [[#opacity][Opacity]]
+      - [[#rif][RIF]]
+      - [[#sharder][Sharder]]
+      - [[#sia][Sia]]
+      - [[#storj][Storj]]
+      - [[#swarm][Swarm]]
 
 ** Overview
 
