@@ -1,27 +1,30 @@
-* Decentralized Storage Platforms
-
-** Contents 								:TOC_4_gh:
-- [[#decentralized-storage-platforms][Decentralized Storage Platforms]]
+* Decentralized Storage Platforms                            :TOC_4_gh:QUOTE:
+#+BEGIN_QUOTE
   - [[#overview][Overview]]
   - [[#platforms][Platforms]]
     - [[#ipfs--related][IPFS & related]]
       - [[#ipfs][IPFS]]
       - [[#filecoin][Filecoin]]
       - [[#btfs-bittorrent-file-system][BTFS (BitTorrent File System)]]
+      - [[#crust-2020][Crust (2020)]]
       - [[#decent][Decent]]
       - [[#peergos][Peergos]]
     - [[#the-rest][The rest]]
       - [[#0chain][0chain]]
       - [[#arweave][Arweave]]
+      - [[#burst-2019][Burst (2019)]]
       - [[#dat][Dat]]
       - [[#internxt][Internxt]]
       - [[#maidsafe][Maidsafe]]
       - [[#opacity][Opacity]]
+      - [[#ppio-2019][PPIO (2019)]]
       - [[#rif][RIF]]
       - [[#sharder][Sharder]]
       - [[#sia][Sia]]
+      - [[#sinovate-2019][Sinovate (2019)]]
       - [[#storj][Storj]]
       - [[#swarm][Swarm]]
+#+END_QUOTE
 
 ** Overview
 
@@ -38,11 +41,12 @@ One disclaimer: from July 2018 to December 2019 I was a Senior Erlang Developer 
 ** Platforms
 
 - for each:
-  - link to home page
+  - link to home page, twitter account
   - link to white paper or equivalent
   - brief description
   - highlight unique/innovative/different contributions
   - query bits I don't understand
+  - project start date (eg white paper, first substantial git commit)
   - note most recent activity
 
 *** IPFS & related
@@ -73,6 +77,16 @@ Several projects offer hosted wrappers around IPFS for improved ease of use and/
 "BTFS is a fork of IPFS ... integrated with the TRON blockchain" (from the [[https://www.bittorrent.com/btfs/faq/][faq]]).
 
 - Why is BTFS a fork of IPFS?  What does IPFS provide that BitTorrent doesn't already have?
+
+**** Crust (2020)
+
+- https://crust.network/
+- [[https://twitter.com/CrustNetwork][@CrustNetwork]]
+- github: https://github.com/crustio/
+
+Technology (Nov 2020) and economics (2021/1) whitepapers available on the website.
+
+According to their [[https://www.crust.network/faq][FAQ]], "IPFS is currently available for miners' internal storage, but IPFS routing has not yet been enabled in Crust Network."  I'm putting Crust in the IPFS section because, according to their [[https://wiki.crust.network/en][Wiki]], IPFS is required to run Crust nodes.
 
 **** Decent
 
@@ -105,6 +119,13 @@ For more details see:
 - https://www.arweave.org/
 - [[https://twitter.com/arweaveteam][@arweaveteam]]
 
+**** Burst (2019)
+
+- https://www.burst-coin.org/
+- [[https://twitter.com/GetBURST][@GetBURST]]
+- whitepapers: https://www.burstcoin.community/burst-whitepaper/
+- [[https://github.com/burst-apps-team/burstcoin][Burstcoin Reference Software]]: reference wallet and full node implementation.  Installation & operation notes [[https://www.burstcoin.community/burstcoin-software-library/][here]].
+
 **** Dat
 
 - https://dat.foundation/
@@ -136,6 +157,15 @@ Little/no detail on how storage is verified, but Internxt seems to be partly a j
 
 Basic $39.99/year [[https://www.opacity.io/sign-up][(Sign up]])
 
+**** PPIO (2019)
+
+- https://pp.io
+- [[https://twitter.com/ppio_official][@ppio_official]]
+
+There's a whitepaper [[https://github.com/PPIO/Whitepaper][here]], but I can't find any core code.
+
+- [[https://medium.com/coinmonks/differences-between-ppio-filecoin-storj-20cdf7b3b02e][The Ultimate Guide To Understanding The Differences Between PPIO, Filecoin, and Storj]]
+
 **** RIF
 
 - https://www.rifos.org/blog/rif-storage-a-decentralized-storage-solution/
@@ -150,6 +180,15 @@ Basic $39.99/year [[https://www.opacity.io/sign-up][(Sign up]])
 
 - https://sia.tech
 - [[https://twitter.com/siatechhq][@siatechhq]]
+
+**** Sinovate (2019)
+
+- https://sinovate.io
+- [[https://twitter.com/SinovateChain][@SinovateChain]]
+- Whitepaper (English, Korean, French): https://sinovate.io/sin-whitepaper/
+- github: https://github.com/SINOVATEblockchain
+
+Seems to be a fork of bitcoin?
 
 **** Storj
 
